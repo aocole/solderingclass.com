@@ -1,0 +1,126 @@
+---
+import Contactform from '@components/contactform.astro'
+import Container from '@components/container.astro'
+import Sectionhead from '@components/sectionhead.astro'
+import Layout from '@layouts/Layout.astro'
+import { Icon } from 'astro-icon/components'
+---
+
+<Layout title="Classes">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Classes</Fragment>
+      <Fragment slot="desc">In-person soldering classes in Seattle</Fragment>
+    </Sectionhead>
+
+    <section class="max-w-4xl mx-auto p-6 rounded-lg shadow-md">
+      <h1 class="text-3xl font-bold text-gray-800 mb-4">
+        Learn to Solder for Electronics
+      </h1>
+
+      <h2 class="text-2xl font-semibold text-gray-700 mt-6">
+        This Class is For:
+      </h2>
+      <ul class="list-disc list-inside text-gray-600 mt-2 space-y-2">
+        <li>Absolute beginners with no soldering experience</li>
+        <li>Hobbyists or makers interested in starting with electronics</li>
+        <li>
+          Students, artists, or creators looking to build or repair projects
+        </li>
+        <li>Every identity and background</li>
+      </ul>
+
+      <h2 class="text-2xl font-semibold text-gray-700 mt-6">
+        What You Will Do:
+      </h2>
+      <ul class="list-disc list-inside text-gray-600 mt-2 space-y-2">
+        <li>
+          <span class="font-semibold">Short and simple lesson:</span> Just 5 minutes
+          of instruction before trying it yourself - best to learn by doing!
+        </li>
+        <li>
+          <span class="font-semibold">Hands-on soldering:</span> Assemble a simple
+          light-up electronic badge that you can keep! (20-45 minutes)
+        </li>
+        <li>Q&A and suggestions for next steps</li>
+      </ul>
+
+      <h2 class="text-2xl font-semibold text-gray-700 mt-6">
+        What You Will Learn:
+      </h2>
+      <ul class="list-disc list-inside text-gray-600 mt-2 space-y-2">
+        <li>How to set up and use a soldering iron</li>
+        <li>How to create functional and reliable solder joints</li>
+        <li>Soldering safety and ergonomics</li>
+        <li>
+          Suggestions for equipment to buy if you want to continue soldering at
+          home
+        </li>
+      </ul>
+
+      <h2 class="text-2xl font-semibold text-gray-700 mt-6">
+        What’s Included:
+      </h2>
+      <ul class="list-disc list-inside text-gray-600 mt-2 space-y-2">
+        <li>All materials to complete the project</li>
+        <li>Use of our tools and supplies during the class</li>
+        <li>Digital handout with class materials and next steps</li>
+      </ul>
+
+      <p class="text-gray-600 mt-6">
+        Class is scheduled for 1 hour, however many students finish faster. We
+        have 3 soldering stations available to use during the class.
+        <span class="font-semibold">Ages 12+.</span> Anyone under 18 must be accompanied
+        by a guardian.
+      </p>
+
+      <h2 class="text-2xl font-semibold text-gray-700 mt-6">
+        Price and Registration:
+      </h2>
+      <p class="text-gray-600 mt-2">
+        Classes are <span class="font-semibold">$69 per person</span> and include
+        the project kit to take home. Guardians accompanying a minor do not need
+        a separate ticket unless they want their own kit/instruction.
+      </p>
+      <p class="text-gray-600 mt-2">
+        Customized lessons and private classes are available for groups of 3 or
+        more.
+      </p>
+
+      <h2 class="text-2xl font-semibold text-gray-700 mt-6">Location:</h2>
+      <p class="text-gray-600 mt-2">
+        Classes are held at <span class="font-semibold">Passable</span> on Capitol
+        Hill in Seattle. Passable is a makerspace and art gallery.
+      </p>
+      <p class="text-gray-600 mt-2">
+        Passable is easily accessible by public transit - the Capitol Hill light
+        rail stop is an 8-minute walk away.
+      </p>
+      <p class="text-gray-600 mt-2">
+        Parking can be difficult on Capitol Hill, but there is metered street
+        parking in the neighborhood as well as pay lots. Please do not park
+        blocking the garage door in front of Passable.
+      </p>
+
+      <h2 class="text-2xl font-semibold text-gray-700 mt-6">
+        Who We Are / Why Learn From Us:
+      </h2>
+      <p class="text-gray-600 mt-2">
+        Andrew (he/they) has been soldering electronics for over 25 years and
+        teaching soldering since 2022. His welcoming and fun teaching style
+        emphasizes hands-on learning with minimal classroom-style instruction.
+      </p>
+
+      <h2 class="text-2xl font-semibold text-gray-700 mt-6">
+        Accessibility Information:
+      </h2>
+      <p class="text-gray-600 mt-2">
+        Our main entrance has a high stair up from the sidewalk. Please let us
+        know if you need an easier entrance to the building and we can open the
+        roll-up door - this still involves a steep slope to enter and may not be
+        appropriate for wheelchairs. Please let us know in advance if you have
+        accessibility concerns, and we’ll do our best to accommodate.
+      </p>
+    </section>
+  </Container>
+</Layout>

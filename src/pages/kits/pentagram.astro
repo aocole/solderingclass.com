@@ -1,0 +1,71 @@
+---
+import Contactform from '@components/contactform.astro'
+import Container from '@components/container.astro'
+import Sectionhead from '@components/sectionhead.astro'
+import Layout from '@layouts/Layout.astro'
+import heroImage from 'assets/pentagram_glamor_hero.jpeg'
+import { Picture } from 'astro:assets'
+import { Icon } from 'astro-icon/components'
+---
+
+<Layout title="Light-up Pentagram Ornament Soldering Kit">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Light-up Pentagram Ornament</Fragment>
+      <Fragment slot="desc">Soldering Kit</Fragment>
+    </Sectionhead>
+
+    <div class="py-6 md:order-1 hidden md:block">
+      <Picture
+        src={heroImage}
+        alt="Pentagram Ornament Closeup"
+        widths={[200, 400, 600]}
+        sizes="(max-width: 800px) 100vw, 620px"
+        loading="eager"
+        format="avif"
+      />
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
+      <iframe
+        width="460"
+        height="315"
+        src="https://www.youtube.com/embed/As3Av6PQE-Y?si=1fmnin8-RC1ARNf5"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+
+      <div>
+        <h2>This kit contains:</h2>
+        <ul>
+          <li>Pentagram circuit board 70mmx68mm</li>
+          <li>Battery clip</li>
+          <li>Battery</li>
+          <li>5 Red LEDs</li>
+          <li>Resistor</li>
+          <li>Switch</li>
+          <li>Hanging Hook</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>You supply:</h2>
+        <ul>
+          <li>Fine-tip soldering iron</li>
+          <li>Solder</li>
+          <li>Flush cutters or wire cutters</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Difficulty Level</h2>
+        <p>
+          Easy through-hole soldering suitable for a beginner. Contains lead and
+          small parts.
+        </p>
+      </div>
+    </div>
+  </Container>
+</Layout>

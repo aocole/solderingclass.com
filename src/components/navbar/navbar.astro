@@ -1,0 +1,52 @@
+---
+import Container from '@components/container.astro'
+import Link from '@components/ui/link.astro'
+import Dropdown from './dropdown.astro'
+// import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+
+const menuitems = [
+  {
+    title: 'Classes',
+    path: '/classes',
+  },
+  {
+    title: 'Kits',
+    path: '/kits/pentagram',
+  },
+  {
+    title: 'Contact',
+    path: '/contact',
+  },
+]
+---
+
+<Container>
+  <header class="flex flex-col lg:flex-row justify-between items-center my-5">
+    <div class="flex w-full lg:w-auto items-center justify-between">
+      <a href="/" class="text-lg"
+        ><span class="font-bold text-slate-800">Soldering</span><span
+          class="text-slate-500">Class</span
+        >.com
+      </a>
+      <div class="block lg:hidden"></div>
+    </div>
+    <ul class="flex flex-col lg:flex-row lg:gap-3">
+      {
+        menuitems.map((item, index) => (
+          <>
+            {
+              <li>
+                <a
+                  href={item.path}
+                  class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900"
+                >
+                  <span> {item.title}</span>
+                </a>
+              </li>
+            }
+          </>
+        ))
+      }
+    </ul>
+  </header>
+</Container>
