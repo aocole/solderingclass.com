@@ -13,10 +13,29 @@ import { Icon } from 'astro-icon/components'
       <Fragment slot="desc">In-person soldering classes in Seattle</Fragment>
     </Sectionhead>
 
-    <section class="max-w-4xl mx-auto p-6 rounded-lg shadow-md">
+    <section class="max-w-4xl mx-auto p-6 rounded-lg">
       <h1 class="text-3xl font-bold text-gray-800 mb-4">
         Learn to Solder for Electronics
       </h1>
+
+      <div
+        class="sticky top-4 p-4 float-end bg-white max-w-sm outline-black outline-double rounded-sm"
+      >
+        <h2 class="text-2xl font-semibold text-gray-700">
+          Next class with <a href="/kits/pentagram">Pentagram Ornament Kit</a> Included
+        </h2>
+        <h3 class="text-xl font-semibold text-gray-700">
+          Saturday Dec 14, 2024
+        </h3>
+        <a
+          href="https://www.eventbrite.com/e/soldering-electronics-for-beginners-pentagram-ornament-kit-tickets-1113056755719"
+          ><button
+            class="rounded-full bg-orange-700 text-white px-4 py-2"
+            id="eventbrite-widget-modal-trigger-1113056755719"
+            type="button">Buy Tickets</button
+          ></a
+        >
+      </div>
 
       <h2 class="text-2xl font-semibold text-gray-700 mt-6">
         This Class is For:
@@ -90,7 +109,9 @@ import { Icon } from 'astro-icon/components'
       <h2 class="text-2xl font-semibold text-gray-700 mt-6">Location:</h2>
       <p class="text-gray-600 mt-2">
         Classes are held at <span class="font-semibold">Passable</span> on Capitol
-        Hill in Seattle. Passable is a makerspace and art gallery.
+        Hill in Seattle. Passable is a makerspace and art gallery located at <span
+          class="font-semibold">1005 E Union St, Seattle, WA 98122</span
+        >
       </p>
       <p class="text-gray-600 mt-2">
         Passable is easily accessible by public transit - the Capitol Hill light

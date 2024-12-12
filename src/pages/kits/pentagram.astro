@@ -15,7 +15,8 @@ import { Icon } from 'astro-icon/components'
       <Fragment slot="desc">Soldering Kit</Fragment>
     </Sectionhead>
 
-    <div class="py-6 md:order-1 hidden md:block">
+    <!-- Hero Image -->
+    <div class="py-6">
       <Picture
         src={heroImage}
         alt="Pentagram Ornament Closeup"
@@ -23,48 +24,61 @@ import { Icon } from 'astro-icon/components'
         sizes="(max-width: 800px) 100vw, 620px"
         loading="eager"
         format="avif"
+        class="w-full rounded-lg shadow-lg"
       />
     </div>
 
-    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
-      <iframe
-        width="460"
-        height="315"
-        src="https://www.youtube.com/embed/As3Av6PQE-Y?si=1fmnin8-RC1ARNf5"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen></iframe>
-
-      <div>
-        <h2>This kit contains:</h2>
-        <ul>
-          <li>Pentagram circuit board 70mmx68mm</li>
-          <li>Battery clip</li>
-          <li>Battery</li>
-          <li>5 Red LEDs</li>
-          <li>Resistor</li>
-          <li>Switch</li>
-          <li>Hanging Hook</li>
-        </ul>
+    <!-- Content Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mx-auto max-w-5xl mt-12">
+      <!-- YouTube Video Section -->
+      <div class="w-full lg:max-w-none">
+        <iframe
+          class="w-full aspect-video rounded-lg shadow-md"
+          src="https://www.youtube.com/embed/As3Av6PQE-Y?si=1fmnin8-RC1ARNf5"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
       </div>
 
-      <div>
-        <h2>You supply:</h2>
-        <ul>
-          <li>Fine-tip soldering iron</li>
-          <li>Solder</li>
-          <li>Flush cutters or wire cutters</li>
-        </ul>
-      </div>
+      <!-- Kit Contents -->
+      <div class="space-y-8">
+        <div>
+          <h2 class="text-xl font-semibold text-gray-800 mb-4">
+            This kit contains:
+          </h2>
+          <ul class="list-disc list-inside text-gray-600 space-y-2">
+            <li>Pentagram circuit board 70mmx68mm</li>
+            <li>Battery clip</li>
+            <li>Battery</li>
+            <li>5 Red LEDs</li>
+            <li>Resistor</li>
+            <li>Switch</li>
+            <li>Hanging Hook</li>
+          </ul>
+        </div>
 
-      <div>
-        <h2>Difficulty Level</h2>
-        <p>
-          Easy through-hole soldering suitable for a beginner. Contains lead and
-          small parts.
-        </p>
+        <!-- User Supplies -->
+        <div>
+          <h2 class="text-xl font-semibold text-gray-800 mb-4">You supply:</h2>
+          <ul class="list-disc list-inside text-gray-600 space-y-2">
+            <li>Fine-tip soldering iron</li>
+            <li>Solder</li>
+            <li>Flush cutters or wire cutters</li>
+          </ul>
+        </div>
+
+        <!-- Difficulty Level -->
+        <div>
+          <h2 class="text-xl font-semibold text-gray-800 mb-4">
+            Difficulty Level
+          </h2>
+          <p class="text-gray-600">
+            Easy through-hole soldering suitable for a beginner. Contains lead
+            and small parts.
+          </p>
+        </div>
       </div>
     </div>
   </Container>
