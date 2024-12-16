@@ -1,0 +1,39 @@
+---
+import Container from '@components/container.astro'
+import Sectionhead from '@components/sectionhead.astro'
+import Layout from '@layouts/Layout.astro'
+import pentagramImage from 'assets/pentagram_glamor_hero.jpeg'
+import KitIndexItem from '@components/kit_index_item.astro'
+---
+
+<Layout title="Soldering Kits">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Soldering Kits</Fragment>
+      <Fragment slot="desc"
+        >Learn to solder with one of our easy-to-build kits</Fragment
+      >
+    </Sectionhead>
+
+    <!-- Content Grid -->
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto max-w-3xl mt-12"
+    >
+      <KitIndexItem
+        name="Pentagram Ornament Light-up Soldering Kit"
+        image={pentagramImage}
+        slug="pentagram"
+      />
+      <KitIndexItem
+        name="Pentagram Ornament Light-up Soldering Kit"
+        image={pentagramImage}
+        slug="pentagram"
+      />
+      <KitIndexItem
+        name="Pentagram Ornament Light-up Soldering Kit"
+        image={pentagramImage}
+        slug="pentagram"
+      />
+    </div>
+  </Container></Layout
+>

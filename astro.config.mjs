@@ -9,4 +9,7 @@ import icon from 'astro-icon'
 export default defineConfig({
   site: 'https://solderingclass.com',
   integrations: [tailwind(), icon()],
+  redirects: {
+    '/qr/pentagram': '/kits/pentagram',
+  },
 })

@@ -1,0 +1,12 @@
+---
+import Picture from 'astro/components/Picture.astro'
+import { Image } from 'astro:assets'
+const { name, image, slug } = Astro.props
+---
+
+<div class="rounded-sm shadow-xl w-64 p-2 mx-auto">
+  <a href={'/kits/' + slug}>
+    <Image src={image} alt={name} width="256" />
+    <h1 class="text-lg">{name}</h1>
+  </a>
+</div>
