@@ -4,6 +4,7 @@ import Container from '@components/container.astro'
 import Sectionhead from '@components/sectionhead.astro'
 import Layout from '@layouts/Layout.astro'
 import { Icon } from 'astro-icon/components'
+const price = '$59'
 ---
 
 <Layout title="Classes">
@@ -25,7 +26,7 @@ import { Icon } from 'astro-icon/components'
           Classes on your schedule
         </h2>
         <h3 class="text-l font-semibold text-gray-700">
-          It's easy and cheap ($59/person)
+          It's easy and cheap ({price}/person)
         </h3>
         <h4 class="text-xs">I even wrote the email for you :-)</h4>
         <a
@@ -97,7 +98,7 @@ import { Icon } from 'astro-icon/components'
         Price and Registration:
       </h2>
       <p class="text-gray-600 mt-2">
-        Classes are <span class="font-semibold">$69 per person</span> and include
+        Classes are <span class="font-semibold">{price} per person</span> and include
         the project kit to take home. Guardians accompanying a minor do not need
         a separate ticket unless they want their own kit/instruction.
       </p>
